@@ -63,8 +63,8 @@ header {
   
 }
 .image-cv {
-    width : 150px;
-    height : 150px;
+    width : 100px;
+    height : 100px;
     object-fit: cover;
     border-radius: 50%;
     border : 5px solid white;
@@ -76,9 +76,11 @@ header {
     }
 
 .lien {text-decoration: none; color:inherit;
-
-
 }
+
+
+
+
 
 /*Mise en forme de footer */
 
@@ -100,17 +102,40 @@ footer {
 .main-content {
     display :flex;
     flex-direction: row;
+    
+    
 }
 
 aside {background-color: #e3e3e3;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left :15px;
+    padding-right : 100px;
+    padding-top: 25px;
+    
+    
 
 }
+.skill-container {display:flex; gap:20px;}
 
-.white-s {background-color: white;}
+.skill-name {font-size: 0.8em; 
+    font-weight: bold;}
+
+.language-container {display:flex; gap :20px;}
+
+.language-name {
+    font-size: 0.8em; 
+    font-weight: bold;}
+
+.level {font-size: 0.8em;}
+
+li {font-size: 0.8em;}
+
+
+.white-s {background-color: white; padding-top: 10px; padding-left : 35px;}
 
 .container {
 display: flex;
-flex-direction: column;}
+flex-direction: column;
+padding-left:0px;}
