@@ -68,9 +68,7 @@ header {
     object-fit: cover;
     border-radius: 50%;
     border : 5px solid white;
-     
 }
-
 
 .identity {color:white;display: inline-block; align-items:right;
     }
