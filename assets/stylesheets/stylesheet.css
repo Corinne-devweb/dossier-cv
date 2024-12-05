@@ -1,4 +1,3 @@
-
 /*Mise en forme de l'écriture */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
@@ -58,10 +57,9 @@ header, main, footer {
 /*Mise en forme de header */
 
 header {
-    background-color:#17abb3;
-   
-  
-}
+    background-color:#17abb3;}
+
+
 .image-cv {
     width : 100px;
     height : 100px;
@@ -73,11 +71,8 @@ header {
 .identity {color:white;display: inline-block; align-items:right;
     }
 
-.lien {text-decoration: none; color:inherit;
-}
-
-
-
+.lien {text-decoration: none; 
+  color:inherit;}
 
 
 /*Mise en forme de footer */
@@ -86,23 +81,20 @@ footer {
     background-color:#17abb3;
   
 }
+
 .logo {
     width : 20px;
     height : 20px;
 }
 
 .white{
-    color:white;
+    color:white;}
 
-}
 /*Mise en forme de main */
 
 .main-content {
     display :flex;
-    flex-direction: row;
-    
-    
-}
+    flex-direction: row;}
 
 aside {background-color: #e3e3e3;
     display: flex;
@@ -110,11 +102,9 @@ aside {background-color: #e3e3e3;
     align-items: center;
     padding-left :15px;
     padding-right : 100px;
-    padding-top: 25px;
-    
-    
+    padding-top: 25px;}
 
-}
+
 .skill-container {display:flex; gap:20px;}
 
 .skill-name {font-size: 0.8em; 
@@ -137,3 +127,4 @@ li {font-size: 0.8em;}
 display: flex;
 flex-direction: column;
 padding-left:0px;}
+
