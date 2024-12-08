@@ -35,7 +35,9 @@ h1 , h2 , h3 , h4 {
 
 
 
-h1 , h2 {color:white; font-weight: 600;}
+h1 , h2 {color:white;}
+
+h1 {font-weight : 600;}
 
 h4 {
     font-weight: bold;}
@@ -57,28 +59,49 @@ header, main, footer {
 /*Mise en forme de header */
 
 header {
-    background-color:#17abb3;}
+    background-color:#17abb3; position:relative;
+display: flex; padding-bottom: 30px; padding-top: 5px; padding-right: 150px; justify-content: flex-end;}
 
 
 .image-cv {
-    width : 100px;
-    height : 100px;
+    width : 140px;
+    height : 140px;
     object-fit: cover;
     border-radius: 50%;
-    border : 5px solid white;
+    border : 5px solid white; position :absolute; left : 30px; top : 35px;
 }
 
-.identity {color:white;display: inline-block; align-items:right;
+.identity {color:white;display: flex; 
+    flex-direction: column; justify-content: center; 
+    align-items: center;
+    
     }
+
+.identity.items {display: flex; flex-direction: row; justify-content: center; align-items:end;
+
+
+}
+.identity-items-1 {display : flex; gap:80px;
+
+}
+
+.identity-items-2 {display: flex; gap:28px;
+
+}
 
 .lien {text-decoration: none; 
   color:inherit;}
 
+  h1{letter-spacing: 2px; font-size: 3em; margin-bottom: 0;
+
+  }
+
+  h2 { margin-top: 0;}
 
 /*Mise en forme de footer */
 
 footer {
-    background-color:#17abb3;
+    background-color:#17abb3; text-align: center; padding-bottom :10px;
   
 }
 
@@ -88,24 +111,30 @@ footer {
 }
 
 .white{
-    color:white;}
+    color:white; font-style: italic;}
 
+.links{
+ display: flex;
+flex-direction: row;
+justify-content: center;
+gap : 20px;
+padding-top: 20px; padding-bottom: 5px;
+
+}
 /*Mise en forme de main */
 
-.main-content {
+.main-content {box-sizing: border-box;
     display :flex;
     flex-direction: row;}
 
 aside {background-color: #e3e3e3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left :15px;
-    padding-right : 100px;
     padding-top: 25px;}
 
+.aside-part {padding-left : 35px; width: 250px; padding-right: 35px;
 
-.skill-container {display:flex; gap:20px;}
+}
+
+.skill-container {display:flex; gap:15px;}
 
 .skill-name {font-size: 0.8em; 
     font-weight: bold;}
@@ -121,10 +150,19 @@ aside {background-color: #e3e3e3;
 li {font-size: 0.8em;}
 
 
-.white-s {background-color: white; padding-top: 10px; padding-left : 35px;}
+.white-s {background-color: white; padding-left : 35px; padding-right : 35px;padding-bottom: 10px;}
 
 .container {
 display: flex;
 flex-direction: column;
 padding-left:0px;}
 
+.space-top { padding-top:27px;}
+
+p{ 
+    text-align: justify; text-indent: 30px;
+}
+
+.indent { text-indent: 30px;}
+
+.space-bottom { padding-bottom : 50px;}
