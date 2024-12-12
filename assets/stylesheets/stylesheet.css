@@ -32,12 +32,15 @@ h1 , h2 , h3 , h4 {
     font-family:"Lato";}
 
 h1 , h2 {
-    color:white;}
+    color:#ffffff;}
 
 h1 {
     font-weight : 600; 
     font-size: 3em; 
     letter-spacing: 2px;}
+
+h2 {
+    font-weight: 400;}
 
 h3 {
     color:#17abb3; 
@@ -52,7 +55,7 @@ h4 {
 /*Mise en forme de body */
 
 body {
-    background-color:red;}
+    background-color:#f5f5f5;}
 
 header, main, footer {
     width: 1160px; 
@@ -76,13 +79,13 @@ header {
     height : 140px;
     object-fit: cover;
     border-radius: 50%;
-    border : 5px solid white; 
+    border : 5px solid #ffffff; 
     position :absolute; 
     left : 30px; 
     top : 25px;}
 
 .identity {
-    color:white;
+    color:#ffffff;
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -90,17 +93,15 @@ header {
 
 .identity.items {
     display: flex; 
-    flex-direction: row; 
-    justify-content: center; 
+    flex-direction: row;
+    justify-content: end; 
     align-items:end;}
 
-.identity-items-1 {
-    display : flex; 
-    gap:80px;}
+.permis {
+    padding-left : 30px;}
 
-.identity-items-2 {
-    display: flex; 
-    gap:28px;}
+.address {
+    padding-left : 75px;}
 
 .lien {
     text-decoration: none; 
@@ -186,7 +187,7 @@ li::marker {
         /*Mise en forme de main - right part */
 
 .white-s {
-    background-color: white; 
+    background-color: #ffffff; 
     padding-left : 35px; 
     padding-right : 35px;
     padding-bottom: 10px;}
@@ -244,7 +245,7 @@ footer {
     height : 20px;}
 
 .white {
-    color:white; 
+    color:#ffffff; 
     font-style: italic;}
 
 .links {
