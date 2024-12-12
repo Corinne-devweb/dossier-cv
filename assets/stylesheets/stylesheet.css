@@ -1,4 +1,4 @@
-/*Mise en forme de l'écriture */
+/*Mise en forme de l'écriture titres et body */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
 
@@ -23,8 +23,9 @@
     font-weight: 400;
     font-style: italic;}
 
-* {
-    font-family: "Raleway"; 
+body {
+    font-family: "Raleway", sans-serif; 
+    font-size: 0.9em; 
     font-weight: 400;}
 
 h1 , h2 , h3 , h4 {
@@ -34,15 +35,18 @@ h1 , h2 {
     color:white;}
 
 h1 {
-    font-weight : 600;}
+    font-weight : 600; 
+    font-size: 3em; 
+    letter-spacing: 2px;}
+
+h3 {
+    color:#17abb3; 
+    font-weight: 400;
+    font-size: 1.5em;}
 
 h4 {
     font-weight: bold; 
     margin-bottom: 2px;}
-
-h3 {
-    color:#17abb3; 
-    font-weight: 400;}
 
 
 /*Mise en forme de body */
@@ -56,7 +60,7 @@ header, main, footer {
     box-sizing: border-box;}
 
 
-/*Mise en forme de header */
+    /*Mise en forme de header */
 
 header {
     background-color:#17abb3; 
@@ -67,7 +71,6 @@ header {
     padding-top: 5px; 
     padding-right: 150px;}
 
-
 .image-cv {
     width : 140px;
     height : 140px;
@@ -76,7 +79,7 @@ header {
     border : 5px solid white; 
     position :absolute; 
     left : 30px; 
-    top : 35px;}
+    top : 25px;}
 
 .identity {
     color:white;
@@ -103,23 +106,21 @@ header {
     text-decoration: none; 
     color:inherit;}
 
-  h1 {
-    letter-spacing: 2px; 
-    font-size: 3em; 
+h1 {
     margin-bottom: 0;}
 
-  h2 { 
+h2 { 
     margin-top: 0;}
 
 
-/*Mise en forme de main */
+    /*Mise en forme de main */
 
 .main-content {
     box-sizing: border-box;
     display :flex;
     flex-direction: row;}
 
-    /*Mise en forme de main - left part */
+        /*Mise en forme de main - left part */
 
 aside {
     background-color: #e3e3e3;
@@ -140,7 +141,7 @@ aside {
     margin-bottom:2px;}
 
 .skill-name {
-    font-size: 0.8em; 
+    font-size: 0.9em; 
     font-weight: bold;}
 
 .container-html {
@@ -158,11 +159,14 @@ aside {
     margin-bottom: 7px;}
 
 .language-name {
-    font-size: 0.8em; 
+    font-size: 0.9em; 
     font-weight: bold;}
 
 .level {
-    font-size: 0.8em;}
+    font-size: 0.9em;}
+
+.stars {
+    color:#17abb3;}
 
 ul {
     display:flex;
@@ -173,10 +177,13 @@ ul {
     list-style-type: square;}
 
 li {
-     font-size: 0.8em;}
+    font-size: 0.9em;}
+
+li::marker {
+    color:#17abb3;}
 
 
-    /*Mise en forme de main - right part */
+        /*Mise en forme de main - right part */
 
 .white-s {
     background-color: white; 
@@ -194,7 +201,8 @@ li {
 
 p { 
     text-align: justify; 
-    text-indent: 30px;}
+    text-indent: 30px;
+    font-size:1em ;}
 
 .indent { 
     text-indent: 30px;}
@@ -224,7 +232,7 @@ article {
     font-size: smaller;}
 
     
-/*Mise en forme de footer */
+    /*Mise en forme de footer */
 
 footer {
     background-color:#17abb3; 
@@ -246,3 +254,15 @@ footer {
     gap : 20px;
     padding-top: 20px; 
     padding-bottom: 5px;}
+
+/*Mise en forme des effets dynamiques */
+
+header img:hover{
+    cursor:zoom-in;}
+
+.logo:hover {
+    opacity: 0.5;}
+
+article:hover {
+    border-left: 3px solid #17abb3; 
+    background-color: #e3e3e3;}
