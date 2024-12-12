@@ -1,4 +1,4 @@
-/*Mise en forme de l'écriture */
+/*Mise en forme de l'écriture titres et body */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400&display=swap');
 
@@ -7,16 +7,14 @@
     src:url('../font/Raleway-Regular.woff');
     src:url('../font/Raleway-Regular.ttf') format('truetype');
     font-weight: 400;
-    font-style: normal;
-}
+    font-style: normal;}
 
 @font-face {
     font-family:"Raleway";
     src: url('../font/Raleway-ExtraBold.woff');
     src:url('../font/Raleway-ExtraBold.ttf') format('truetype');
     font-weight: 800;
-    font-style: normal;
-}
+    font-style: normal;}
 
 @font-face {
     font-family:"Raleway";
@@ -25,106 +23,244 @@
     font-weight: 400;
     font-style: italic;}
 
-
-* {
-    font-family: "Raleway"; font-weight: 400;}
-
+body {
+    font-family: "Raleway", sans-serif; 
+    font-size: 0.9em; 
+    font-weight: 400;}
 
 h1 , h2 , h3 , h4 {
-                    font-family:"Lato";}
+    font-family:"Lato";}
 
+h1 , h2 {
+    color:#ffffff;}
 
+h1 {
+    font-weight : 600; 
+    font-size: 3em; 
+    letter-spacing: 2px;}
 
-h1 , h2 {color:white; font-weight: 600;}
-
-h4 {
-    font-weight: bold;}
+h2 {
+    font-weight: 400;}
 
 h3 {
-    color:#17abb3; font-weight: 400;}
+    color:#17abb3; 
+    font-weight: 400;
+    font-size: 1.5em;}
+
+h4 {
+    font-weight: bold; 
+    margin-bottom: 2px;}
 
 
 /*Mise en forme de body */
 
 body {
-    background-color:red;}
+    background-color:#f5f5f5;}
 
 header, main, footer {
-                    width: 1160px; 
-                    margin:auto; 
-                    box-sizing: border-box;}
+    width: 1160px; 
+    margin:auto; 
+    box-sizing: border-box;}
 
-/*Mise en forme de header */
+
+    /*Mise en forme de header */
 
 header {
-    background-color:#17abb3;}
-
+    background-color:#17abb3; 
+    position:relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 30px; 
+    padding-top: 5px; 
+    padding-right: 150px;}
 
 .image-cv {
-    width : 100px;
-    height : 100px;
+    width : 140px;
+    height : 140px;
     object-fit: cover;
     border-radius: 50%;
-    border : 5px solid white;
-}
+    border : 5px solid #ffffff; 
+    position :absolute; 
+    left : 30px; 
+    top : 25px;}
 
-.identity {color:white;display: inline-block; align-items:right;
-    }
+.identity {
+    color:#ffffff;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;}
 
-.lien {text-decoration: none; 
-  color:inherit;}
+.identity.items {
+    display: flex; 
+    flex-direction: row;
+    justify-content: end; 
+    align-items:end;}
+
+.permis {
+    padding-left : 30px;}
+
+.address {
+    padding-left : 75px;}
+
+.lien {
+    text-decoration: none; 
+    color:inherit;}
+
+h1 {
+    margin-bottom: 0;}
+
+h2 { 
+    margin-top: 0;}
 
 
-/*Mise en forme de footer */
-
-footer {
-    background-color:#17abb3;
-  
-}
-
-.logo {
-    width : 20px;
-    height : 20px;
-}
-
-.white{
-    color:white;}
-
-/*Mise en forme de main */
+    /*Mise en forme de main */
 
 .main-content {
+    box-sizing: border-box;
     display :flex;
     flex-direction: row;}
 
-aside {background-color: #e3e3e3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left :15px;
-    padding-right : 100px;
+        /*Mise en forme de main - left part */
+
+aside {
+    background-color: #e3e3e3;
     padding-top: 25px;}
 
+.aside-part {
+    padding-left : 35px; 
+    width: 250px; 
+    padding-right: 35px;
+    margin-bottom : 30px;}
 
-.skill-container {display:flex; gap:20px;}
+.skill-container {
+    display:flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items:center;
+    margin-top :2px; 
+    margin-bottom:2px;}
 
-.skill-name {font-size: 0.8em; 
+.skill-name {
+    font-size: 0.9em; 
     font-weight: bold;}
 
-.language-container {display:flex; gap :20px;}
+.container-html {
+    padding-top : 8px;}
+
+.french-container {
+    padding-top : 8px;}
+
+.language-container {
+    display:flex; 
+    flex-direction : row; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-top:7px; 
+    margin-bottom: 7px;}
 
 .language-name {
-    font-size: 0.8em; 
+    font-size: 0.9em; 
     font-weight: bold;}
 
-.level {font-size: 0.8em;}
+.level {
+    font-size: 0.9em;}
 
-li {font-size: 0.8em;}
+.stars {
+    color:#17abb3;}
+
+ul {
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-left:15px;
+    list-style-type: square;}
+
+li {
+    font-size: 0.9em;}
+
+li::marker {
+    color:#17abb3;}
 
 
-.white-s {background-color: white; padding-top: 10px; padding-left : 35px;}
+        /*Mise en forme de main - right part */
+
+.white-s {
+    background-color: #ffffff; 
+    padding-left : 35px; 
+    padding-right : 35px;
+    padding-bottom: 10px;}
 
 .container {
-display: flex;
-flex-direction: column;
-padding-left:0px;}
+    display: flex;
+    flex-direction: column;
+    padding-left:0px;}
 
+.space-top { 
+    padding-top:27px;}
+
+p { 
+    text-align: justify; 
+    text-indent: 30px;
+    font-size:1em ;}
+
+.space-bottom { 
+    padding-bottom : 50px;}
+
+h3 {
+    margin-bottom: 7px;}
+
+article {
+    display:flex; 
+    flex-direction : row; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;}
+
+.item-title {
+    flex-basis :70%;}
+
+.item-date {
+    margin-top: 15px; color:#17abb3;}
+
+.item-place {
+    flex-basis: 70%; 
+    font-style: italic; 
+    font-size: smaller;}
+
+    
+    /*Mise en forme de footer */
+
+footer {
+    background-color:#17abb3; 
+    text-align: center; 
+    padding-bottom :10px;}
+
+.logo {
+    width : 20px;
+    height : 20px;}
+
+.white {
+    color:#ffffff; 
+    font-style: italic;}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap : 20px;
+    padding-top: 20px; 
+    padding-bottom: 5px;}
+
+/*Mise en forme des effets dynamiques */
+
+header img:hover{
+    cursor:zoom-in;}
+
+.logo:hover {
+    opacity: 0.5;}
+
+article:hover {
+    border-left: 3px solid #17abb3; 
+    background-color: #e3e3e3;}
